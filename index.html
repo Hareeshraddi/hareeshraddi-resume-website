@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Hareeshraddi Dani — Computer Science Engineer | Resume</title>
+<meta name="description" content="Premium resume portfolio of Hareeshraddi Dani, 5th-semester Computer Science Engineering student at SKSVMACET. Software development, cybersecurity and AI." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="style.css" />
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='24' fill='%23050816'/><text x='50' y='66' font-size='48' font-family='sans-serif' font-weight='700' text-anchor='middle' fill='%238B5CF6'>H</text></svg>" />
+</head>
+<body>
+
+<!-- ============ INTRO LOADER ============ -->
+<div id="loader" aria-hidden="true">
+  <div class="loader-inner">
+    <div class="loader-mono">HD<span class="loader-dot">.</span></div>
+    <div class="loader-name">HAREESHRADDI DANI</div>
+    <div class="loader-bar"><span id="loaderFill"></span></div>
+    <div class="loader-status" id="loaderStatus">Initializing experience…</div>
+  </div>
+  <div class="loader-blob b1"></div>
+  <div class="loader-blob b2"></div>
+</div>
+
+<!-- Scroll progress -->
+<div class="scroll-progress" id="scrollProgress" aria-hidden="true"><span></span></div>
+
+<!-- Cursor glow (desktop only) -->
+<div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
+<div class="cursor-ring" id="cursorRing" aria-hidden="true"></div>
+
+<!-- Ambient background -->
+<div class="ambient" aria-hidden="true">
+  <div class="ambient-orb orb-violet"></div>
+  <div class="ambient-orb orb-cyan"></div>
+  <div class="ambient-orb orb-deep"></div>
+  <div class="ambient-grid"></div>
+  <div class="ambient-noise"></div>
+</div>
+
+<!-- ============ NAVIGATION ============ -->
+<header class="nav-wrap" id="siteNav">
+  <nav class="nav glass" aria-label="Primary navigation">
+    <a href="#home" class="brand" aria-label="Hareeshraddi Dani home">
+      <span class="brand-mark">HD</span>
+      <span class="brand-text"><strong>Hareeshraddi Dani</strong><em>CS Engineer · SKSVMACET</em></span>
+    </a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home" class="nav-link active" data-section="home">Home</a></li>
+      <li><a href="#objective" class="nav-link" data-section="objective">Objective</a></li>
+      <li><a href="#education" class="nav-link" data-section="education">Education</a></li>
+      <li><a href="#skills" class="nav-link" data-section="skills">Skills</a></li>
+      <li><a href="#projects" class="nav-link" data-section="projects">Projects</a></li>
+      <li><a href="#strengths" class="nav-link" data-section="strengths">Strengths</a></li>
+      <li><a href="#contact" class="nav-link" data-section="contact">Contact</a></li>
+    </ul>
+    <div class="nav-actions">
+      <button class="btn btn-ghost btn-sm" id="printBtn" type="button" aria-label="Print or download resume">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+        Résumé
+      </button>
+      <a href="#contact" class="btn btn-primary btn-sm magnetic">Hire Me</a>
+      <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+</header>
+
+<!-- Mobile menu -->
+<div class="mobile-menu glass-strong" id="mobileMenu" aria-hidden="true">
+  <a href="#home">Home</a>
+  <a href="#objective">Objective</a>
+  <a href="#education">Education</a>
+  <a href="#skills">Skills</a>
+  <a href="#projects">Projects</a>
+  <a href="#strengths">Strengths</a>
+  <a href="#contact">Contact</a>
+  <button class="btn btn-primary" id="mobilePrintBtn" type="button">Download Résumé</button>
+</div>
+
+<main>
+<!-- ============ HERO ============ -->
+<section class="hero" id="home" aria-label="Introduction">
+  <canvas id="particles" class="particles" aria-hidden="true"></canvas>
+  <div class="hero-glow-line" aria-hidden="true"></div>
+
+  <div class="hero-inner">
+    <!-- Left: copy -->
+    <div class="hero-copy">
+      <div class="hero-eyebrow reveal-hero" data-delay="0">
+        <span class="pulse-dot"></span>
+        <span class="mono">OPEN TO INTERNSHIPS · 5TH SEM · SKSVMACET</span>
+      </div>
+
+      <p class="hero-hello reveal-hero" data-delay="1">Hello, I'm</p>
+      <h1 class="hero-name" id="heroName" aria-label="Hareeshraddi Dani">
+        <!-- chars injected by JS for staggered reveal -->
+        <span class="name-line" data-text="Hareeshraddi"></span>
+        <span class="name-line gradient" data-text="Dani"></span>
+      </h1>
+
+      <p class="hero-subtitle reveal-hero" data-delay="5">
+        <span class="subtitle-rule"></span>
+        Computer Science Engineer in the Making.
+      </p>
+      <p class="hero-tagline reveal-hero" data-delay="6">“Turning Ideas Into Meaningful Digital Experiences.”</p>
+
+      <p class="hero-desc reveal-hero" data-delay="7">
+        5th-semester B.E. Computer Science student crafting clean web experiences and
+        exploring <strong>cybersecurity</strong> &amp; <strong>AI</strong> — one project at a time.
+      </p>
+
+      <div class="hero-cta reveal-hero" data-delay="8">
+        <a href="#projects" class="btn btn-primary btn-lg magnetic">
+          View My Work
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+        </a>
+        <a href="#contact" class="btn btn-glass btn-lg magnetic">Get In Touch</a>
+      </div>
+
+      <div class="hero-meta reveal-hero" data-delay="9">
+        <div class="meta-item"><strong>04</strong><span>Featured<br/>Projects</span></div>
+        <div class="meta-div"></div>
+        <div class="meta-item"><strong>03</strong><span>Core<br/>Technologies</span></div>
+        <div class="meta-div"></div>
+        <div class="meta-item"><strong>05</strong><span>Semester<br/>B.E. CSE</span></div>
+      </div>
+    </div>
+
+    <!-- Right: morphing portrait stage -->
+    <div class="hero-visual reveal-hero" data-delay="4" id="heroVisual">
+      <div class="morph-stage" id="morphStage" aria-label="Profile photograph of Hareeshraddi Dani">
+        <!-- liquid blobs behind -->
+        <div class="blob blob-1" aria-hidden="true"></div>
+        <div class="blob blob-2" aria-hidden="true"></div>
+        <div class="blob blob-3" aria-hidden="true"></div>
+        <!-- orbit rings -->
+        <div class="orbit orbit-1" aria-hidden="true"><span class="orbit-sat s1"></span></div>
+        <div class="orbit orbit-2" aria-hidden="true"><span class="orbit-sat s2"></span><span class="orbit-sat s3"></span></div>
+        <div class="orbit orbit-3" aria-hidden="true"></div>
+        <!-- glass orbs -->
+        <div class="glass-orb go-1" aria-hidden="true"></div>
+        <div class="glass-orb go-2" aria-hidden="true"></div>
+        <div class="glass-orb go-3" aria-hidden="true"></div>
+        <!-- morphing photo frame -->
+        <div class="photo-morph" id="photoMorph">
+          <div class="photo-ring"></div>
+          <img src="assets/profile.webp" alt="Professional profile photograph of Hareeshraddi Dani" id="profileImg" fetchpriority="high" />
+          <div class="photo-placeholder" id="photoPlaceholder" aria-hidden="true">HD</div>
+          <div class="photo-shine" aria-hidden="true"></div>
+        </div>
+        <!-- floating chips -->
+        <div class="float-chip fc-1 glass" aria-hidden="true">
+          <span class="chip-ico">◈</span> Python Developer
+        </div>
+        <div class="float-chip fc-2 glass" aria-hidden="true">
+          <span class="chip-ico">⬢</span> Security Explorer
+        </div>
+        <div class="float-chip fc-3 glass" aria-hidden="true">
+          <span class="chip-ico">✦</span> SKSVMACET · CSE
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero-bottom reveal-hero" data-delay="10">
+    <a href="#objective" class="scroll-hint" aria-label="Scroll to career objective">
+      <span class="mouse"><span class="wheel"></span></span>
+      <span class="mono">SCROLL TO EXPLORE</span>
+    </a>
+    <div class="hero-socials">
+      <a href="mailto:hareeshraddi2005@gmail.com" aria-label="Email"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg></a>
+      <a href="tel:+919164066966" aria-label="Phone"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.12.9.34 1.79.66 2.64a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.44-1.23a2 2 0 0 1 2.11-.45c.85.32 1.74.54 2.64.66A2 2 0 0 1 22 16.92z"/></svg></a>
+      <a href="#" aria-label="GitHub — add your link" title="GitHub (add your link)"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg></a>
+      <a href="#" aria-label="LinkedIn — add your link" title="LinkedIn (add your link)"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a>
+    </div>
+  </div>
+</section>
+
+<!-- Marquee -->
+<div class="marquee" aria-hidden="true">
+  <div class="marquee-track">
+    <span>HTML5</span><i>✦</i><span>CSS3</span><i>✦</i><span>PYTHON</span><i>✦</i><span>CYBERSECURITY</span><i>✦</i><span>ARTIFICIAL INTELLIGENCE</span><i>✦</i><span>WEB DEVELOPMENT</span><i>✦</i><span>API SECURITY</span><i>✦</i><span>UI ENGINEERING</span><i>✦</i>
+    <span>HTML5</span><i>✦</i><span>CSS3</span><i>✦</i><span>PYTHON</span><i>✦</i><span>CYBERSECURITY</span><i>✦</i><span>ARTIFICIAL INTELLIGENCE</span><i>✦</i><span>WEB DEVELOPMENT</span><i>✦</i><span>API SECURITY</span><i>✦</i><span>UI ENGINEERING</span><i>✦</i>
+  </div>
+</div>
+
+<!-- ============ CAREER OBJECTIVE ============ -->
+<section class="section" id="objective" aria-label="Career objective">
+  <div class="container">
+    <div class="sec-head reveal">
+      <span class="sec-index mono">01 — PROFILE</span>
+      <h2 class="sec-title">Career <span class="gradient-text">Objective</span></h2>
+      <p class="sec-sub">A focused engineer-in-training with a builder's mindset.</p>
+    </div>
+    <div class="obj-grid">
+      <article class="glass card obj-main reveal">
+        <div class="quote-mark" aria-hidden="true">“</div>
+        <p class="obj-text">Motivated Computer Science Engineering student passionate about <em>software development</em>, <em>cybersecurity</em>, and <em>artificial intelligence</em>. Seeking opportunities to apply technical knowledge, develop practical solutions, and grow into a skilled software engineer.</p>
+        <div class="obj-tags">
+          <span class="tag">Problem Solver</span>
+          <span class="tag">Fast Learner</span>
+          <span class="tag">Team Collaborator</span>
+          <span class="tag">Detail Oriented</span>
+        </div>
+      </article>
+      <aside class="obj-side">
+        <div class="glass card info-card reveal" data-delay="1">
+          <h3>At a glance</h3>
+          <ul class="info-list">
+            <li><span>Name</span><strong>Hareeshraddi Dani</strong></li>
+            <li><span>Degree</span><strong>B.E. · Computer Science</strong></li>
+            <li><span>College</span><strong>SKSVMACET</strong></li>
+            <li><span>Semester</span><strong>5th Semester</strong></li>
+            <li><span>Email</span><strong class="small">hareeshraddi2005@gmail.com</strong></li>
+            <li><span>Phone</span><strong>+91 9164066966</strong></li>
+            <li><span>Location</span><strong class="placeholder-text">Karnataka, India · <em>(editable)</em></strong></li>
+          </ul>
+        </div>
+        <div class="glass card status-card reveal" data-delay="2">
+          <span class="pulse-dot"></span>
+          <div><strong>Available for internships</strong><p>Academic projects · Freelance UI builds · Mentorship</p></div>
+        </div>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- ============ EDUCATION ============ -->
+<section class="section section-alt" id="education" aria-label="Education">
+  <div class="container">
+    <div class="sec-head reveal">
+      <span class="sec-index mono">02 — EDUCATION</span>
+      <h2 class="sec-title">Academic <span class="gradient-text">Journey</span></h2>
+      <p class="sec-sub">Foundations in computing, strengthened every semester.</p>
+    </div>
+    <div class="timeline">
+      <div class="timeline-line" aria-hidden="true"><span id="timelineFill"></span></div>
+
+      <article class="t-item reveal">
+        <div class="t-dot current"><span></span></div>
+        <div class="glass card t-card featured">
+          <div class="t-top"><span class="pill pill-live">● &nbsp;Currently Pursuing</span><span class="mono t-year">2023 — 2027 <em>(editable)</em></span></div>
+          <h3>Bachelor of Engineering — Computer Science &amp; Engineering</h3>
+          <p class="t-org">SKSVMACET · 5th Semester</p>
+          <p class="t-desc">Building strong fundamentals in programming, data structures, web technologies, databases and computer networks — while exploring cybersecurity and AI through self-driven projects.</p>
+          <div class="t-chips">
+            <span class="tag">Data Structures</span><span class="tag">DBMS</span><span class="tag">Operating Systems</span><span class="tag">Computer Networks</span><span class="tag">Web Technologies</span>
+          </div>
+          <p class="t-note mono">CGPA: <span class="placeholder-text">[ Add your CGPA ]</span></p>
+        </div>
+      </article>
+
+      <article class="t-item reveal">
+        <div class="t-dot"><span></span></div>
+        <div class="glass card t-card">
+          <div class="t-top"><span class="pill">Pre-University</span><span class="mono t-year">[ Year ] <em>(editable)</em></span></div>
+          <h3>Pre-University Education — Science (PCMB / PCMC)</h3>
+          <p class="t-org placeholder-text">[ Your college name ] · <em>(editable placeholder)</em></p>
+          <p class="t-desc">Focused on mathematics and science fundamentals that sparked an interest in logical thinking and computing.</p>
+          <p class="t-note mono">Score: <span class="placeholder-text">[ Add percentage ]</span></p>
+        </div>
+      </article>
+
+      <article class="t-item reveal">
+        <div class="t-dot"><span></span></div>
+        <div class="glass card t-card">
+          <div class="t-top"><span class="pill">Secondary School</span><span class="mono t-year">[ Year ] <em>(editable)</em></span></div>
+          <h3>SSLC / 10th Standard</h3>
+          <p class="t-org placeholder-text">[ Your school name ] · <em>(editable placeholder)</em></p>
+          <p class="t-desc">Developed discipline, curiosity and a love for learning — the foundation of my engineering mindset.</p>
+          <p class="t-note mono">Score: <span class="placeholder-text">[ Add percentage ]</span></p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SKILLS ============ -->
+<section class="section" id="skills" aria-label="Technical skills">
+  <div class="container">
+    <div class="sec-head reveal">
+      <span class="sec-index mono">03 — EXPERTISE</span>
+      <h2 class="sec-title">Technical <span class="gradient-text">Skills</span></h2>
+      <p class="sec-sub">Core strengths, honest levels, and what I'm learning next.</p>
+    </div>
+
+    <div class="skills-grid">
+      <!-- Bars -->
+      <div class="glass card reveal">
+        <h3 class="card-title">Core Technologies</h3>
+        <div class="skill" data-level="88">
+          <div class="skill-top"><span><i class="skill-ico html">⌁</i> HTML5 — Semantic &amp; Accessible Markup</span><strong class="skill-pct mono">0%</strong></div>
+          <div class="bar"><span class="fill fill-html"></span></div>
+        </div>
+        <div class="skill" data-level="82">
+          <div class="skill-top"><span><i class="skill-ico css">◍</i> CSS3 — Responsive, Animations, Flex/Grid</span><strong class="skill-pct mono">0%</strong></div>
+          <div class="bar"><span class="fill fill-css"></span></div>
+        </div>
+        <div class="skill" data-level="76">
+          <div class="skill-top"><span><i class="skill-ico py">⬢</i> Python — Scripting, Logic &amp; Problem Solving</span><strong class="skill-pct mono">0%</strong></div>
+          <div class="bar"><span class="fill fill-py"></span></div>
+        </div>
+        <p class="card-foot mono">Levels reflect student proficiency &amp; project usage.</p>
+      </div>
+
+      <!-- Rings -->
+      <div class="glass card reveal" data-delay="1">
+        <h3 class="card-title">Capability Rings</h3>
+        <div class="rings">
+          <div class="ring" data-pct="85">
+            <svg viewBox="0 0 120 120"><circle class="bg" cx="60" cy="60" r="52"/><circle class="fg fg-a" cx="60" cy="60" r="52"/></svg>
+            <div class="ring-label"><strong>85%</strong><span>Frontend<br/>UI Building</span></div>
+          </div>
+          <div class="ring" data-pct="70">
+            <svg viewBox="0 0 120 120"><circle class="bg" cx="60" cy="60" r="52"/><circle class="fg fg-b" cx="60" cy="60" r="52"/></svg>
+            <div class="ring-label"><strong>70%</strong><span>Python<br/>Programming</span></div>
+          </div>
+          <div class="ring" data-pct="62">
+            <svg viewBox="0 0 120 120"><circle class="bg" cx="60" cy="60" r="52"/><circle class="fg fg-c" cx="60" cy="60" r="52"/></svg>
+            <div class="ring-label"><strong>62%</strong><span>Security<br/>Fundamentals</span></div>
+          </div>
+        </div>
+        <p class="card-foot mono">Measured by hands-on practice, not certificates.</p>
+      </div>
+    </div>
+
+    <div class="tools-row">
+      <div class="glass card tool reveal">
+        <div class="tool-ico">◈</div>
+        <h4>Web Foundations</h4>
+        <p>HTML · CSS · Responsive Design · Forms · Accessibility Basics</p>
+      </div>
+      <div class="glass card tool reveal" data-delay="1">
+        <div class="tool-ico">⬢</div>
+        <h4>Programming</h4>
+        <p>Python · Logic Building · File Handling · Basic DSA</p>
+      </div>
+      <div class="glass card tool reveal" data-delay="2">
+        <div class="tool-ico">⬣</div>
+        <h4>Tools &amp; Workflow</h4>
+        <p>VS Code · Git &amp; GitHub Basics · Chrome DevTools</p>
+      </div>
+      <div class="glass card tool learning reveal" data-delay="3">
+        <div class="tool-ico">✦</div>
+        <h4>Currently Learning</h4>
+        <p>JavaScript · API Security · AI Fundamentals</p>
+        <span class="pill pill-live">● &nbsp;In Progress</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PROJECTS ============ -->
+<section class="section section-alt" id="projects" aria-label="Featured projects">
+  <div class="container">
+    <div class="sec-head reveal">
+      <span class="sec-index mono">04 — SELECTED WORK</span>
+      <h2 class="sec-title">Featured <span class="gradient-text">Projects</span></h2>
+      <p class="sec-sub">Four builds that shaped how I think, design and engineer.</p>
+    </div>
+
+    <div class="projects-grid">
+      <!-- P1 -->
+      <article class="proj glass reveal tilt" data-tilt>
+        <div class="proj-art art-health" aria-hidden="true">
+          <div class="art-blob"></div><div class="art-ring"></div>
+          <div class="art-icon">♥</div>
+          <div class="art-bars"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
+          <div class="art-grid"></div>
+        </div>
+        <div class="proj-body">
+          <div class="proj-top"><span class="pill pill-cyan">Web Application</span><span class="mono proj-num">01</span></div>
+          <h3>Personal Health Monitor</h3>
+          <p>A web application for tracking daily health activities, BMI, and personal wellness information — designed to make healthy habits visible and motivating.</p>
+          <ul class="proj-points">
+            <li>Daily activity &amp; wellness tracking interface</li>
+            <li>BMI calculation and health insights display</li>
+            <li>Clean, responsive dashboard-style layout</li>
+          </ul>
+          <div class="proj-tags"><span>HTML</span><span>CSS</span><span>Python</span><span>UI Design</span></div>
+          <div class="proj-actions">
+            <a href="#" class="link-arrow" title="Add live demo link">Live Demo <span>↗</span></a>
+            <a href="#" class="link-arrow dim" title="Add source code link">Source <span>↗</span></a>
+          </div>
+        </div>
+      </article>
+
+      <!-- P2 -->
+      <article class="proj glass reveal tilt" data-tilt data-delay="1">
+        <div class="proj-art art-sentinel" aria-hidden="true">
+          <div class="art-shield">⬢</div>
+          <div class="art-scan"></div>
+          <div class="art-nodes"><span></span><span></span><span></span><span></span></div>
+          <div class="art-grid"></div>
+        </div>
+        <div class="proj-body">
+          <div class="proj-top"><span class="pill pill-violet">Cybersecurity</span><span class="mono proj-num">02</span></div>
+          <h3>API Sentinel — Payment Security Edition</h3>
+          <p>A cybersecurity project focused on identifying API security vulnerabilities and exploring payment integrity protection for modern web services.</p>
+          <ul class="proj-points">
+            <li>API vulnerability concepts &amp; threat mapping</li>
+            <li>Payment-flow integrity exploration</li>
+            <li>Security-first design thinking</li>
+          </ul>
+          <div class="proj-tags"><span>Python</span><span>API Security</span><span>Threat Analysis</span></div>
+          <div class="proj-actions">
+            <a href="#" class="link-arrow" title="Add case-study link">Case Study <span>↗</span></a>
+            <a href="#" class="link-arrow dim" title="Add source code link">Source <span>↗</span></a>
+          </div>
+        </div>
+      </article>
+
+      <!-- P3 -->
+      <article class="proj glass reveal tilt" data-tilt data-delay="2">
+        <div class="proj-art art-verity" aria-hidden="true">
+          <div class="art-cube"><span></span><span></span><span></span></div>
+          <div class="art-ring r2"></div>
+          <div class="art-check">✓</div>
+          <div class="art-grid"></div>
+        </div>
+        <div class="proj-body">
+          <div class="proj-top"><span class="pill pill-mint">Trust Platform Concept</span><span class="mono proj-num">03</span></div>
+          <h3>VerityGrid Campus</h3>
+          <p>A digital trust platform concept focused on document authenticity, identity verification, privacy, and access permissions for campus ecosystems.</p>
+          <ul class="proj-points">
+            <li>Document authenticity verification flow</li>
+            <li>Identity &amp; access-permission model</li>
+            <li>Privacy-conscious UX concept</li>
+          </ul>
+          <div class="proj-tags"><span>HTML</span><span>CSS</span><span>UX Concept</span><span>Privacy</span></div>
+          <div class="proj-actions">
+            <a href="#" class="link-arrow" title="Add concept link">Concept <span>↗</span></a>
+            <a href="#" class="link-arrow dim" title="Add source code link">Source <span>↗</span></a>
+          </div>
+        </div>
+      </article>
+
+      <!-- P4 -->
+      <article class="proj glass reveal tilt" data-tilt data-delay="3">
+        <div class="proj-art art-erp" aria-hidden="true">
+          <div class="art-panels"><span></span><span></span><span></span><span></span></div>
+          <div class="art-cap">▣</div>
+          <div class="art-grid"></div>
+        </div>
+        <div class="proj-body">
+          <div class="proj-top"><span class="pill pill-amber">Administration System</span><span class="mono proj-num">04</span></div>
+          <h3>College ERP</h3>
+          <p>A college administration project exploring centralized academic management and student-related services — attendance, records and communication in one place.</p>
+          <ul class="proj-points">
+            <li>Centralized academic records concept</li>
+            <li>Student services &amp; dashboard modules</li>
+            <li>Role-based interface exploration</li>
+          </ul>
+          <div class="proj-tags"><span>HTML</span><span>CSS</span><span>Python</span><span>Systems</span></div>
+          <div class="proj-actions">
+            <a href="#" class="link-arrow" title="Add demo link">Overview <span>↗</span></a>
+            <a href="#" class="link-arrow dim" title="Add source code link">Source <span>↗</span></a>
+          </div>
+        </div>
+      </article>
+    </div>
+
+    <p class="more-note reveal mono">More experiments on the way — <span class="placeholder-text">[ link your GitHub here ]</span></p>
+  </div>
+</section>
+
+<!-- ============ STRENGTHS ============ -->
+<section class="section" id="strengths" aria-label="Strengths and interests">
+  <div class="container">
+    <div class="sec-head reveal">
+      <span class="sec-index mono">05 — CHARACTER</span>
+      <h2 class="sec-title">Strengths &amp; <span class="gradient-text">Interests</span></h2>
+      <p class="sec-sub">How I work, what drives me, and where I'm headed.</p>
+    </div>
+    <div class="str-grid">
+      <div class="glass card str-card reveal">
+        <div class="str-ico">◎</div>
+        <h3>Self-Motivated Learner</h3>
+        <p>I learn by building — converting documentation and tutorials into working projects, then refining them until they feel right.</p>
+      </div>
+      <div class="glass card str-card reveal" data-delay="1">
+        <div class="str-ico">⬢</div>
+        <h3>Practical Problem Solver</h3>
+        <p>I break complex problems into small testable steps, enjoying the process of debugging and iterative improvement.</p>
+      </div>
+      <div class="glass card str-card reveal" data-delay="2">
+        <div class="str-ico">✦</div>
+        <h3>Design-Aware Developer</h3>
+        <p>I care about spacing, typography and motion — because great engineering should also feel great to use.</p>
+      </div>
+      <div class="glass card str-card reveal" data-delay="3">
+        <div class="str-ico">◈</div>
+        <h3>Curious &amp; Adaptable</h3>
+        <p>From frontend layouts to security concepts, I adapt quickly to new tools and genuinely enjoy learning curves.</p>
+      </div>
+    </div>
+
+    <div class="interest-band glass reveal">
+      <h3>Areas of Interest</h3>
+      <div class="interest-chips">
+        <span>Software Development</span><span>Cybersecurity</span><span>Artificial Intelligence</span>
+        <span>API Design</span><span>Web Engineering</span><span>UI / UX</span><span>Open Source <em>(aspiring)</em></span>
+      </div>
+      <div class="lang-row mono">
+        <span>Languages: English · Kannada <em class="placeholder-text">(edit as needed)</em></span>
+        <span class="sep">·</span>
+        <span>Hobbies: <span class="placeholder-text">[ Reading · Music · Coding · Sports ]</span></span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section class="section section-alt" id="contact" aria-label="Contact">
+  <div class="container">
+    <div class="sec-head reveal">
+      <span class="sec-index mono">06 — CONNECT</span>
+      <h2 class="sec-title">Let's <span class="gradient-text">Connect</span></h2>
+      <p class="sec-sub">Open to internships, project collaboration and mentorship.</p>
+    </div>
+    <div class="contact-grid">
+      <div class="glass card contact-main reveal">
+        <h3>Send a message</h3>
+        <p class="muted">This form opens your email app addressed to me — no backend needed.</p>
+        <form id="contactForm">
+          <div class="frow">
+            <label>Your name<input type="text" name="name" placeholder="Jane Recruiter" required /></label>
+            <label>Your email<input type="email" name="email" placeholder="you@company.com" required /></label>
+          </div>
+          <label>Subject<input type="text" name="subject" placeholder="Internship opportunity" /></label>
+          <label>Message<textarea name="message" rows="4" placeholder="Hi Hareeshraddi, I'd love to talk about…" required></textarea></label>
+          <button type="submit" class="btn btn-primary btn-lg magnetic">Send via Email
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m22 2-7 20-4-9-9-4Z"/><path d="M22 2 11 13"/></svg>
+          </button>
+        </form>
+      </div>
+      <aside class="contact-side">
+        <a class="glass card c-link reveal" href="mailto:hareeshraddi2005@gmail.com">
+          <span class="c-ico">✉</span>
+          <span><em>Email</em><strong>hareeshraddi2005@gmail.com</strong></span>
+          <span class="c-arrow">↗</span>
+        </a>
+        <a class="glass card c-link reveal" data-delay="1" href="tel:+919164066966">
+          <span class="c-ico">☎</span>
+          <span><em>Phone</em><strong>+91 9164066966</strong></span>
+          <span class="c-arrow">↗</span>
+        </a>
+        <div class="glass card c-link reveal placeholder-card" data-delay="2" title="Add your GitHub URL in the HTML">
+          <span class="c-ico">⬣</span>
+          <span><em>GitHub</em><strong class="placeholder-text">[ Add your GitHub link ]</strong></span>
+        </div>
+        <div class="glass card c-link reveal placeholder-card" data-delay="3" title="Add your LinkedIn URL in the HTML">
+          <span class="c-ico">◈</span>
+          <span><em>LinkedIn</em><strong class="placeholder-text">[ Add your LinkedIn link ]</strong></span>
+        </div>
+        <button class="btn btn-glass btn-lg reveal" data-delay="4" id="printBtn2" type="button">⬇ &nbsp;Print / Save Résumé as PDF</button>
+      </aside>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="container footer-inner">
+    <div class="brand small"><span class="brand-mark">HD</span><span>© 2026 Hareeshraddi Dani · SKSVMACET · B.E. CSE</span></div>
+    <p class="mono foot-note">Designed &amp; built with HTML · CSS · Vanilla JS — no frameworks.</p>
+    <button class="to-top" id="toTop" aria-label="Back to top">↑</button>
+  </div>
+</footer>
+
+<!-- ============ PRINT RESUME (visible only when printing) ============ -->
+<div class="print-sheet" aria-hidden="true">
+  <header>
+    <h1>Hareeshraddi Dani</h1>
+    <p>B.E. Computer Science &amp; Engineering · SKSVMACET · 5th Semester</p>
+    <p>hareeshraddi2005@gmail.com · +91 9164066966 · Karnataka, India</p>
+  </header>
+  <section><h2>Career Objective</h2><p>Motivated Computer Science Engineering student passionate about software development, cybersecurity, and artificial intelligence. Seeking opportunities to apply technical knowledge, develop practical solutions, and grow into a skilled software engineer.</p></section>
+  <section><h2>Education</h2>
+    <p><strong>B.E. — Computer Science &amp; Engineering, SKSVMACET</strong> (2023 – 2027, currently 5th semester)</p>
+    <p>Pre-University — Science · [College name, year, score]</p>
+    <p>SSLC / 10th — [School name, year, score]</p>
+  </section>
+  <section><h2>Technical Skills</h2><p>HTML5 (semantic, accessible markup) · CSS3 (responsive, Flex/Grid, animations) · Python (scripting, logic, problem solving) · Tools: VS Code, Git &amp; GitHub basics, Chrome DevTools · Learning: JavaScript, API security, AI fundamentals</p></section>
+  <section><h2>Projects</h2>
+    <p><strong>Personal Health Monitor</strong> — Web app for tracking daily health activities, BMI and wellness info. (HTML, CSS, Python)</p>
+    <p><strong>API Sentinel — Payment Security Edition</strong> — Explores API vulnerabilities and payment integrity protection. (Python, API security)</p>
+    <p><strong>VerityGrid Campus</strong> — Digital trust concept: document authenticity, identity verification, privacy, permissions. (HTML, CSS, UX)</p>
+    <p><strong>College ERP</strong> — Centralized academic management and student services concept. (HTML, CSS, Python)</p>
+  </section>
+  <section><h2>Strengths &amp; Interests</h2><p>Self-motivated learner · Practical problem solver · Design-aware developer · Curious &amp; adaptable. Interests: software development, cybersecurity, AI, web engineering.</p></section>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
